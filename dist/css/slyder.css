@@ -1,0 +1,90 @@
+/*!
+ * Slyder v1.0.0 - "Sogeking no shima deeeeeee - One Piece"
+ * Copyright 20xx Achraf Chouk <achrafchouk@gmail.com>
+ *
+ * slyder.less
+ */
+.slyder-wrapper {
+  background-color: rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  position: relative;
+}
+.slyder-nav {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  left: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  -webkit-transition: all linear .2s;
+  -moz-transition: all linear .2s;
+  -ms-transition: all linear .2s;
+  -sand-transition: all linear .2s;
+  -o-transition: all linear .2s;
+  transition: all linear .2s;
+}
+.slyder-nav li {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-transition: all linear .2s;
+  -moz-transition: all linear .2s;
+  -ms-transition: all linear .2s;
+  -sand-transition: all linear .2s;
+  -o-transition: all linear .2s;
+  transition: all linear .2s;
+}
+.slyder-nav li:first-child {
+  border-top: 0;
+}
+.slyder-nav h3 {
+  margin: 0;
+}
+.slyder-nav .s-back {
+  background-color: rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  line-height: 40px;
+  margin: 0;
+}
+.slyder-nav a.s-link {
+  color: #000000;
+  display: block;
+  font-size: 16px;
+  line-height: 40px;
+  margin: 0;
+  padding: 0 10px;
+  text-decoration: none;
+}
+.slyder-nav .s-content {
+  padding: 10px;
+}
+.slyder-nav .s-content p {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 10px 0;
+}
+.slyder-nav .s-content ol,
+.slyder-nav .s-content ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+.slyder-nav .s-content ol li,
+.slyder-nav .s-content ul li {
+  border: none;
+  height: auto;
+  margin: 0;
+}
+.slyder-nav .s-content ol {
+  list-style: decimal;
+}
+.slyder-nav .s-hidden {
+  left: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+  width: 100%;
+}
+.slyder-nav li.s-current > .s-hidden {
+  visibility: visible;
+}

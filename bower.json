@@ -1,0 +1,31 @@
+{
+  "name": "yohoho.slyder",
+  "version": "1.0.0",
+  "homepage": "https://github.com/crewstyle/slyder",
+  "authors": [
+    "Achraf Chouk <achrafchouk@gmail.com>"
+  ],
+  "description": "A responsive slider navigation faq jQuery plugin",
+  "main": [
+    "dist/slyder.min.js"
+  ],
+  "keywords": [
+    "slyder",
+    "navigation",
+    "faq",
+    "responsive",
+    "jquery-plugin",
+    "ecosystem:jquery"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}

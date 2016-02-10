@@ -1,0 +1,104 @@
+/*!
+ * Slyder v1.0.0 - "Sogeking no shima deeeeeee - One Piece"
+ * Copyright 20xx Achraf Chouk <achrafchouk@gmail.com>
+ *
+ * slyder.less
+ */
+
+.slyder-wrapper {
+    background-color: fade(@black, 5%);
+    overflow: hidden;
+    position: relative;
+}
+
+.slyder-nav {
+    border-bottom: 1px solid fade(@black, 10%);
+    left: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+    -webkit-transition: all linear .2s;
+    -moz-transition: all linear .2s;
+    -ms-transition: all linear .2s;
+    -sand-transition: all linear .2s;
+    -o-transition: all linear .2s;
+    transition: all linear .2s;
+
+    li {
+        border-top: 1px solid fade(@black, 10%);
+
+        -webkit-transition: all linear .2s;
+        -moz-transition: all linear .2s;
+        -ms-transition: all linear .2s;
+        -sand-transition: all linear .2s;
+        -o-transition: all linear .2s;
+        transition: all linear .2s;
+
+        &:first-child {
+            border-top: 0;
+        }
+    }
+
+    h3 {
+        margin: 0;
+    }
+
+    .s-back {
+        background-color: fade(@black, 10%);
+        font-size: 16px;
+        line-height: 40px;
+        margin: 0;
+    }
+
+    a.s-link {
+        color: @black;
+        display: block;
+        font-size: 16px;
+        line-height: 40px;
+        margin: 0;
+        padding: 0 10px;
+        text-decoration: none;
+    }
+
+    .s-content {
+        padding: 10px;
+
+        p {
+            font-size: 14px;
+            line-height: 20px;
+            margin: 10px 0;
+        }
+
+        ol, ul {
+            list-style: disc;
+            padding-left: 20px;
+
+            li {
+                border: none;
+                height: auto;
+                margin: 0;
+            }
+        }
+
+        ol {
+            list-style: decimal;
+        }
+    }
+
+    .s-hidden {
+        left: 100%;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 0;
+        visibility: hidden;
+        width: 100%;
+    }
+
+    li.s-current > .s-hidden {
+        visibility: visible;
+    }
+}
