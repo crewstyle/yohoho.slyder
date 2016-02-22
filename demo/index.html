@@ -9,19 +9,27 @@
 
     <meta name="description" content="A responsive slider navigation faq jQuery plugin">
     <meta name="author" content="crewstyle">
+    <link href="https://cdn.rawgit.com/crewstyle/Urca/master/tests/prism/prism.css" rel="stylesheet">
+    <link href="https://cdn.rawgit.com/crewstyle/Urca/master/dist/urca.min.css" rel="stylesheet">
     <link href="../dist/css/slyder.min.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <style>header,section{border-bottom:10px solid rgba(160,177,193,.25);margin-bottom:50px;padding-bottom:50px}header p{margin:0}footer p{margin:0 0 50px}h3.serif{font-size:16px;font-style:italic}hr{opacity:.5}pre,pre[class*=language-]{margin:50px 0 0;max-height:200px}</style>
 </head>
 <body>
-    <h1>Slyder, a responsive slider navigation faq jQuery plugin</h1>
+    <div class="container small">
+        <header>
+            <h1>Slyder, a responsive slider navigation faq jQuery plugin</h1>
+            <p><a href="https://github.com/crewstyle/slyder" title="Slyder's Github project page">&lsaquo; Github project page</a></p>
+        </header>
 
-    <article class="container">
-        <div class="row">
-            <h2><strong>Demo</strong></h2>
+        <!-- typography -->
+        <section>
+            <h2>Getting started</h2>
 
             <ul class="slyder-nav">
                 <!-- 1 -->
@@ -186,14 +194,181 @@
                     </ul>
                 </li>
             </ul>
-        </div>
-    </article>
 
+            <pre><code class="language-markup">
+&lt;ul class="slyder-nav"&gt;
+    &lt;!-- 1 --&gt;
+    &lt;li class="s-item"&gt;
+        &lt;h3&gt;
+            &lt;a href="#" class="s-link"&gt;Question 1 &rsaquo;&lt;/a&gt;
+        &lt;/h3&gt;
 
-    <footer>
-        <p>Made with ♥ by <a href="https://github.com/crewstyle">Achraf Chouk</a></p>
-    </footer>
+        &lt;ul class="s-hidden"&gt;
+            &lt;li class="s-back"&gt;
+                &lt;a href="#" class="s-link"&gt;&lsaquo; Question 1&lt;/a&gt;
+            &lt;/li&gt;
 
+            &lt;!-- 1.1 --&gt;
+            &lt;li class="s-item"&gt;
+                &lt;h3&gt;
+                    &lt;a href="#" class="s-link"&gt;Question 1.1 &rsaquo;&lt;/a&gt;
+                &lt;/h3&gt;
+
+                &lt;div class="s-hidden"&gt;
+                    &lt;p class="s-back"&gt;
+                        &lt;a href="#" class="s-link"&gt;&lsaquo; Question 1.1&lt;/a&gt;
+                    &lt;/p&gt;
+
+                    &lt;div class="s-content"&gt;
+                        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu pulvinar magna. Sed efficitur neque et orci aliquam efficitur quis sed urna. Nam et malesuada risus. Pellentesque placerat feugiat odio, nec ullamcorper augue pulvinar et. Vestibulum tincidunt lorem eu est mattis, id tristique risus faucibus. Ut mauris lacus, mollis quis mattis viverra, dictum dictum urna. Donec in porttitor augue, vel laoreet justo. Cras auctor erat dictum ante convallis, sit amet venenatis erat dapibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.&lt;/p&gt;
+                        &lt;p&gt;Donec fringilla ultrices est et ultricies. Suspendisse potenti. Etiam at faucibus justo. Phasellus porta interdum aliquam. Donec arcu libero, scelerisque eu fringilla vitae, dignissim vel neque. Integer sed ex vel eros pulvinar tincidunt. Phasellus pharetra, urna in egestas pellentesque, ligula turpis lacinia mauris, vel bibendum arcu nulla id enim. Nunc placerat bibendum erat, eu semper lacus rhoncus eget. Nulla ut sapien in est placerat commodo ut vitae augue.&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+
+            &lt;!-- 1.2 --&gt;
+            &lt;li class="s-item"&gt;
+                &lt;h3&gt;
+                    &lt;a href="#" class="s-link"&gt;Question 1.2 &rsaquo;&lt;/a&gt;
+                &lt;/h3&gt;
+
+                &lt;div class="s-hidden"&gt;
+                    &lt;p class="s-back"&gt;
+                        &lt;a href="#" class="s-link"&gt;&lsaquo; Question 1.2&lt;/a&gt;
+                    &lt;/p&gt;
+
+                    &lt;div class="s-content"&gt;
+                        &lt;p&gt;Vivamus id nulla orci. Integer scelerisque ut lacus a ultrices.
+                        Praesent sit amet aliquet purus, varius tempus augue.
+                        Aliquam nec diam lacinia, porta enim eget, venenatis purus.
+                        Praesent mollis nisi a diam volutpat suscipit.
+                        Nam pretium elit mauris, eget laoreet massa scelerisque in.&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+
+    &lt;!-- 2 --&gt;
+    &lt;li class="s-item"&gt;
+        &lt;h3&gt;
+            &lt;a href="#" class="s-link"&gt;Question 2 &rsaquo;&lt;/a&gt;
+        &lt;/h3&gt;
+
+        &lt;div class="s-hidden"&gt;
+            &lt;p class="s-back"&gt;
+                &lt;a href="#" class="s-link"&gt;&lsaquo; Question 2&lt;/a&gt;
+            &lt;/p&gt;
+
+            &lt;div class="s-content"&gt;
+                &lt;p&gt;Vivamus id nulla orci. Integer scelerisque ut lacus a ultrices.
+                Praesent sit amet aliquet purus, varius tempus augue.
+                Aliquam nec diam lacinia, porta enim eget, venenatis purus.
+                Praesent mollis nisi a diam volutpat suscipit.
+                Nam pretium elit mauris, eget laoreet massa scelerisque in.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/li&gt;
+
+    &lt;!-- 3 --&gt;
+    &lt;li class="s-item"&gt;
+        &lt;h3&gt;
+            &lt;a href="#" class="s-link"&gt;Question 3 &rsaquo;&lt;/a&gt;
+        &lt;/h3&gt;
+
+        &lt;ul class="s-hidden"&gt;
+            &lt;li class="s-back"&gt;
+                &lt;a href="#" class="s-link"&gt;&lsaquo; Question 3&lt;/a&gt;
+            &lt;/li&gt;
+
+            &lt;!-- 3.1 --&gt;
+            &lt;li class="s-item"&gt;
+                &lt;h3&gt;
+                    &lt;a href="#" class="s-link"&gt;Question 3.1 &rsaquo;&lt;/a&gt;
+                &lt;/h3&gt;
+
+                &lt;ul class="s-hidden"&gt;
+                    &lt;li class="s-back"&gt;
+                        &lt;a href="#" class="s-link"&gt;&lsaquo; Question 3.1&lt;/a&gt;
+                    &lt;/li&gt;
+
+                    &lt;!-- 3.1.1 --&gt;
+                    &lt;li class="s-item"&gt;
+                        &lt;h3&gt;
+                            &lt;a href="#" class="s-link"&gt;Question 3.1.1 &rsaquo;&lt;/a&gt;
+                        &lt;/h3&gt;
+
+                        &lt;div class="s-hidden"&gt;
+                            &lt;p class="s-back"&gt;
+                                &lt;a href="#" class="s-link"&gt;&lsaquo; Question 3.1.1&lt;/a&gt;
+                            &lt;/p&gt;
+
+                            &lt;div class="s-content"&gt;
+                                &lt;p&gt;Vivamus id nulla orci. Integer scelerisque ut lacus a ultrices.
+                                Praesent sit amet aliquet purus, varius tempus augue.
+                                Aliquam nec diam lacinia, porta enim eget, venenatis purus.
+                                Praesent mollis nisi a diam volutpat suscipit.
+                                Nam pretium elit mauris, eget laoreet massa scelerisque in.&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/li&gt;
+
+                    &lt;!-- 3.1.2 --&gt;
+                    &lt;li class="s-item"&gt;
+                        &lt;h3&gt;
+                            &lt;a href="#" class="s-link"&gt;Question 3.1.2 &rsaquo;&lt;/a&gt;
+                        &lt;/h3&gt;
+
+                        &lt;div class="s-hidden"&gt;
+                            &lt;p class="s-back"&gt;
+                                &lt;a href="#" class="s-link"&gt;&lsaquo; Question 3.1.2&lt;/a&gt;
+                            &lt;/p&gt;
+
+                            &lt;div class="s-content"&gt;
+                                &lt;p&gt;Vivamus id nulla orci. Integer scelerisque ut lacus a ultrices.
+                                Praesent sit amet aliquet purus, varius tempus augue.
+                                Aliquam nec diam lacinia, porta enim eget, venenatis purus.
+                                Praesent mollis nisi a diam volutpat suscipit.
+                                Nam pretium elit mauris, eget laoreet massa scelerisque in.&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/li&gt;
+
+            &lt;!-- 3.2 --&gt;
+            &lt;li class="s-item"&gt;
+                &lt;h3&gt;
+                    &lt;a href="#" class="s-link"&gt;Question 3.2 &rsaquo;&lt;/a&gt;
+                &lt;/h3&gt;
+
+                &lt;div class="s-hidden"&gt;
+                    &lt;p class="s-back"&gt;
+                        &lt;a href="#" class="s-link"&gt;&lsaquo; Question 3.2&lt;/a&gt;
+                    &lt;/p&gt;
+
+                    &lt;div class="s-content"&gt;
+                        &lt;p&gt;Vivamus id nulla orci. Integer scelerisque ut lacus a ultrices.
+                        Praesent sit amet aliquet purus, varius tempus augue.
+                        Aliquam nec diam lacinia, porta enim eget, venenatis purus.
+                        Praesent mollis nisi a diam volutpat suscipit.
+                        Nam pretium elit mauris, eget laoreet massa scelerisque in.&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+            </code></pre>
+        </section>
+
+        <footer>
+            <p>Made with ♥ by <a href="https://github.com/crewstyle" title="Achraf Chouk's Github profile">Achraf Chouk</a></p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.rawgit.com/crewstyle/Urca/master/tests/prism/prism.js"></script>
+    <script src="https://cdn.rawgit.com/crewstyle/Urca/master/tests/prism/remove.js"></script>
     <script src="../dist/slyder.min.js"></script>
     <script>
         (function ($){
