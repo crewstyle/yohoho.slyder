@@ -5,7 +5,7 @@ _a responsive slider navigation faq jQuery plugin_
 [![GitHub version](https://badge.fury.io/gh/crewstyle%2Fslyder.svg)](https://badge.fury.io/gh/crewstyle%2Fslyder)  
 
 
-## [Demo page](https://cdn.rawgit.com/crewstyle/slyder/master/demo/index.html)
+## [Demo page](https://cdn.rawgit.com/crewstyle/slyder/17c4fc74510db67b4fd43155c86aa8767f032aca/demo/index.html)
 
 
 ## Package manager
