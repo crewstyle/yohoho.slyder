@@ -8,7 +8,7 @@
 module.exports = {
   src: {
     src: [
-      './slyder.js'
+      './src/js/slyder.js'
     ]
   },
 

@@ -1,8 +1,8 @@
-# Slyder [![Build Status](https://travis-ci.org/crewstyle/slyder.svg)](https://travis-ci.org/crewstyle/slyder)
+# Slyder [![Build Status](https://travis-ci.org/crewstyle/yohoho.slyder.svg)](https://travis-ci.org/crewstyle/yohoho.slyder)
 
 _a responsive slider navigation faq jQuery plugin_  
 [![npm version](https://badge.fury.io/js/yohoho.slyder.svg)](https://badge.fury.io/js/yohoho.slyder)
-[![GitHub version](https://badge.fury.io/gh/crewstyle%2Fslyder.svg)](https://badge.fury.io/gh/crewstyle%2Fslyder)  
+[![GitHub version](https://badge.fury.io/gh/crewstyle%2Fyohoho.slyder.svg)](https://badge.fury.io/gh/crewstyle%2Fyohoho.slyder)  
 
 
 ## [Demo page](https://cdn.rawgit.com/crewstyle/slyder/f72b904969e18a2ea0454330578d0012239b581d/demo/index.html)
@@ -221,7 +221,7 @@ wrapper | string | 'slyder-wrapper' | CSS class applied to wrapper
 
 ## Dependencies
 
-jQuery 2.1.4
+jQuery **latest version**
 
 
 ## Authors and Copyright
@@ -232,4 +232,4 @@ Made with ♥ by **[Achraf Chouk](http://github.com/crewstyle "Achraf Chouk")**
 + http://twitter.com/crewstyle
 + http://github.com/crewstyle
 
-Please, read [LICENSE](https://github.com/crewstyle/slyder/blob/master/LICENSE "LICENSE") for more details.
+Please, read [LICENSE](https://github.com/crewstyle/yohoho.slyder/blob/master/LICENSE "LICENSE") for more details.

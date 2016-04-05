@@ -10,12 +10,12 @@ module.exports = {
     files: {
       //including jQuery package
       './dist/slyder.min.js': [
-          './bower_components/jquery/dist/jquery.js',
-          './slyder.js'
+        './bower_components/jquery/dist/jquery.js',
+        './src/js/slyder.js'
       ],
       //standalone
       './dist/standalone/slyder.min.js': [
-          './slyder.js'
+        './src/js/slyder.js'
       ]
     }
   },

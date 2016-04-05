@@ -17,7 +17,7 @@ module.exports = {
 
     files: {
       './dist/css/slyder.css': [
-        './slyder.less'
+        './src/less/slyder.less'
       ]
     }
   }
