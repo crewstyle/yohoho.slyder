@@ -1,7 +1,7 @@
 /*! *//*!
  * ~~~~~~~~~~~~~~~~~~
  * Slyder - ∑¬Ú∂ê®
- * https://github.com/crewstyle/slyder
+ * https://github.com/crewstyle/yohoho.slyder
  * ~~~~~~~~~~~~~~~~~~
  * Copyright 20xx Achraf Chouk (http://github.com/crewstyle)
  */
