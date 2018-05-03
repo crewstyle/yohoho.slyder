@@ -8,9 +8,15 @@
 module.exports = {
   src: {
     files: {
-      //including jQuery package
+      //including jQuery packages
       './dist/slyder.min.js': [
         './bower_components/jquery/dist/jquery.js',
+        './bower_components/jquery.scrollTo/jquery.scrollTo.js',
+        './src/js/slyder.js'
+      ],
+      //including jQuery.scrollTo package only
+      './dist/with-jquery.scrollTo/slyder.min.js': [
+        './bower_components/jquery.scrollTo/jquery.scrollTo.js',
         './src/js/slyder.js'
       ],
       //standalone

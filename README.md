@@ -203,6 +203,8 @@ $('.slyder-nav').slyder({
     hidden: 's-hidden',
     item: '.s-item',
     link: 'h3 .s-link',
+    offset: 0,
+    scrolltop: true,
     wrapper: 'slyder-wrapper'
 });
 ````
@@ -217,6 +219,8 @@ current | string | 's-current' | CSS class applied to current item
 hidden | string | 's-hidden' | CSS selector to find hidden item to display
 item | string | '.s-item' | CSS selector to find sub items
 link | string | 'h3 .s-link' | CSS selector to find link navigation
+offset | integer | 0 | Pixels to offset when auto-scroll
+scrollto | boolean | true | Define wether to enable or not auto-scroll
 wrapper | string | 'slyder-wrapper' | CSS class applied to wrapper
 
 ## Dependencies

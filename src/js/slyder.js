@@ -12,6 +12,8 @@
  *     hidden: 's-hidden',
  *     item: '.s-item',
  *     link: 'h3 .s-link',
+ *     offset: 0,
+ *     scrolltop: true,
  *     wrapper: 'slyder-wrapper'
  * });
  *
@@ -95,6 +97,9 @@
             height: _height+'px',
             left: '-='+_slyder.width
         });
+
+        //scroll to top
+        _slyder.scrollTop();
     };
 
     Slyder.prototype.getBack = function (e){
@@ -115,6 +120,31 @@
             height: _height+'px',
             left: '+='+_slyder.width
         });
+
+        //scroll to top
+        _slyder.scrollTop();
+    };
+
+    Slyder.prototype.scrollTop = function (e){
+        e.preventDefault();
+        var _slyder = this;
+
+        //check option
+        if (!_slyder.scrolltop) {
+            return;
+        }
+
+        //vars
+        var offset = parseInt(_slyder.offset);
+        offset = 0 > offset ? -1 * offset : offset;
+
+        //scroll
+        _slyder.$el.scrollTo(_slyder.$el, 500, {
+            axis: 'x',
+            offset: {
+                top: offset
+            }
+        });
     };
 
     var methods = {
@@ -129,6 +159,8 @@
                 hidden: 's-hidden',
                 item: '.s-item',
                 link: 'h3 .s-link',
+                offset: 0,
+                scrolltop: true,
                 wrapper: 'slyder-wrapper'
             };
 

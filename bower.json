@@ -27,5 +27,8 @@
   "license": "MIT",
   "dependencies": {
     "jquery": "~2.1.4"
+  },
+  "devDependencies": {
+    "jquery.scrollTo": "^2.1.2"
   }
 }
