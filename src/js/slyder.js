@@ -13,6 +13,7 @@
  *     item: '.s-item',
  *     link: 'h3 .s-link',
  *     offset: 0,
+ *     scrolltarget: 'current',
  *     scrolltop: true,
  *     wrapper: 'slyder-wrapper'
  * });
@@ -125,22 +126,23 @@
         _slyder.scrollTop();
     };
 
-    Slyder.prototype.scrollTop = function (e){
-        e.preventDefault();
+    Slyder.prototype.scrollTop = function (){
         var _slyder = this;
 
         //check option
-        if (!_slyder.scrolltop) {
+        if (!_slyder.options.scrolltop) {
             return;
         }
 
         //vars
-        var offset = parseInt(_slyder.offset);
-        offset = 0 > offset ? -1 * offset : offset;
+        var $target = 'parent' === _slyder.options.scrolltarget ? _slyder.$el.parent() : _slyder.$el,
+            offset = parseInt(_slyder.options.offset);
+
+        offset = 0 < offset ? -1 * offset : offset;
 
         //scroll
-        _slyder.$el.scrollTo(_slyder.$el, 500, {
-            axis: 'x',
+        $('body').scrollTo($target, 500, {
+            axis: 'y',
             offset: {
                 top: offset
             }
@@ -160,6 +162,7 @@
                 item: '.s-item',
                 link: 'h3 .s-link',
                 offset: 0,
+                scrolltarget: 'current',
                 scrolltop: true,
                 wrapper: 'slyder-wrapper'
             };
